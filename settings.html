@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extension Settings</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e; /* Dark background */
+      color: #ffffff; /* White text */
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #cccccc; /* Slightly lighter label color */
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      accent-color: #0078D7; /* Custom checkbox color */
+    }
+
+    .settings-group {
+      width: 100%;
+      max-width: 400px;
+      background-color: #2b2b2b; /* Darker panel background */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    }
+
+    .settings-group h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0078D7; /* Bright blue button */
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #005BB5; /* Slightly darker on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>Extension Settings</h1>
+
+  <div class="settings-group">
+    <h2>General Settings</h2>
+    <label>
+      <input type="checkbox" id="showOverlay" />
+      Show Hints
+    </label>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

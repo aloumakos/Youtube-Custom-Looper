@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Custom Looper",
+    "version": "1.1",
+    "description": "Loop the favourite parts of your YouTube videos.",
+    "permissions": [
+      "activeTab", "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+    "options_ui": {
+    "page": "settings.html"
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "pepe-rotate.gif",
+        "48": "pepe-rotate.gif",
+        "128": "pepe-rotate.gif"
+      }
+    },
+    "icons": {
+      "16": "pepe-rotate.gif",
+      "48": "pepe-rotate.gif",
+      "128": "pepe-rotate.gif"
+    }
+  }
+  
