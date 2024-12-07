@@ -34,7 +34,6 @@ document.addEventListener('yt-player-updated', async function () {
   if (data) {
     if (location.href != data.href) {
       browser.runtime.sendMessage({ action: "remove"}).then((data)=> {
-          console.log('hihi')
           timestamps = { start: 0, end: 0 };
           clickCount = 0;
           isLooping = false;
@@ -98,7 +97,7 @@ function enableClickListener() {
     video = document.querySelector('video');
     progressBar = document.querySelector('.ytp-progress-bar');
   }
-  
+
   if (!addedListener) {
     progressBar.addEventListener('click', progressBarClickListener);
     addedListener = true;
