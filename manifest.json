@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "YouTube Custom Looper",
     "version": "1.1",
-    "description": "Loop the favourite parts of your YouTube videos.",
+    "description": "Loop the favourite parts of your YouTube videos!",
     "permissions": [
       "activeTab", "storage"
     ],
